@@ -2,10 +2,11 @@
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
-    background-image: url(../images/fundo.png);
+    background-image: url(../images/230712_LP_JORNADA_EDUCAÇÃO.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
 
     .container {
         position: relative;
@@ -17,9 +18,9 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: #000;
+        background-color: #000000;
         content: '';
-        opacity: .7;
+        opacity: .2;
     }
 
 
@@ -28,15 +29,31 @@
         margin-bottom: 64px; 
         font-size: 40px;
         line-height: 56px;
-        color: #fff;
         font-weight: 800;
         text-align: center;
+        color: rgb(255, 255, 255);
     }
 
     &__logo {
         margin: 0 auto;
-        width: 193px;
-        height: 80px;
+        width: 260px;
+        height: 125px;
         display: block;
+
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+        &__logo {
+            height: 40px;
+            
+            
+        }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
     }
 }
