@@ -1,5 +1,7 @@
 .event {
     padding: 80px 0;
+    background-image: linear-gradient(#1B6CA7, #442BDB);
+
     .container {
         display: flex;
     }
@@ -21,6 +23,16 @@
 
         &__description {
             line-height: 22px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        .container {
+            display: block;
+        }
+        
+        &__image {
+            width: 100%;
         }
     }
 }
